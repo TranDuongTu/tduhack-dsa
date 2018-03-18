@@ -24,7 +24,7 @@
     <servlet-class>com.tduhack.dsa.endpoints.DSAEndpointsServlet</servlet-class>
     <init-param>
       <param-name>services</param-name>
-      <param-value>com.tduhack.dsa.endpoints.DSA</param-value>
+      <param-value>com.tduhack.dsa.endpoints.DSA, com.tduhack.users.Users</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>

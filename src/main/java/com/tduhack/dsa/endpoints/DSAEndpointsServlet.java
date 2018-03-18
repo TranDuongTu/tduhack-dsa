@@ -1,14 +1,14 @@
 package com.tduhack.dsa.endpoints;
 
+import com.google.api.server.spi.EndpointsServlet;
 import com.tduhack.HasFields;
 import com.tduhack.HasName;
 import com.tduhack.JSON;
-import com.tduhack.Strings;
 import com.tduhack.appengine.DataStore;
 import com.tduhack.appengine.Store;
 import com.tduhack.dsa.entity.Problem;
+import com.tduhack.utils.Strings;
 
-import javax.servlet.http.HttpServlet;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,7 +20,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-public class DSAEndpointsServlet extends HttpServlet {
+public class DSAEndpointsServlet extends EndpointsServlet {
 
   private static final Logger logger = Logger.getLogger(DSAEndpointsServlet.class.getName());
 
